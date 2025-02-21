@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ 
+.card{
+  width: 300px;
+  height:180px;
+  background-color: gold;
+  border: 1px solid black;
+  text-align: center;
+
+  animation: animcard 5s ;
+ /* animation-name: box;
+  animation-duration: 5s;*/
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+@keyframes animcard{
+  0%{
+    transform: rotateX(46deg) rotateY(10deg) rotateZ(0deg);
+      background-color: blue;
+  }
+  25%{
+    transform: rotateX(-46deg) rotateY(-10deg) rotateZ(0deg);
+      background-color: yellow;
+
+  }
+
+  50%{
+    transform: rotateX(46deg) rotateY(10deg) rotateZ(0deg);
+    background-color: blue;
+    
+  }
+
+  75%{
+    transform: rotateX(-46deg) rotateY(-10deg) rotateZ(0deg);
+    background-color: blue;
+
+  }
+ 
+  100%{
+    transform: rotateX(46deg) rotateY(10deg) rotateZ(0deg);
+    background-color: blue;
+  
+  }
+ 
+}
